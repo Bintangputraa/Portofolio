@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bintang Cahya Putra - Portofolio Profesional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+
+        /* Portfolio Section */
+        #portfolio {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .portfolio-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .portfolio-info {
+            padding: 20px;
+        }
+
+        .portfolio-info h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .portfolio-info p {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-info .project-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .portfolio-info .project-links a:hover {
+            color: #0056b3;
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            #hero h1 {
+                font-size: 2.5em;
+            }
+
+            #hero p {
+                font-size: 1.1em;
+            }
+
+            #about .container {
+                flex-direction: column;
+            }
+
+            .profile-image img {
+                width: 200px;
+                height: 200px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .skills-grid,
+            .portfolio-grid,
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-item {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li {
+                margin: 0 10px;
+            }
+
+            #hero h1 {
+                font-size: 2em;
+            }
+
+            #hero p {
+                font-size: 1em;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Bintang Cahya Putra</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html#hero">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">Tentang</a>
+                    </li>
+                    <li>
+                        <a href="index.html#skills">Keahlian</a>
+                    </li>
+                    <li>
+                        <a href="index.html#portofolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">Kontak</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>UI/UX Desain Aplikasi mobile E-commerce</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="/UI UX E-Commerce Fashion - Memphisorigins/Scene.jpg"
+                        alt="UI/UX Aplikasi Mobile 1">
+                    <div class="portfolio-info">
+                        <h3>UI UX E-Commerce Fashion - Memphisorigins</h3>
+                        <p>Desain UI/UX aplikasi mobile lengkap untuk e-commerce fashion, fokus pada pengalaman pengguna yang
+                            mulus dan antarmuka yang menarik.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Lihat Detail</a>
+                            <br>
+                            <a href="https://www.figma.com/proto/lYKiFiGE2u3iDJtLVP88O4/UI-UX-E-Commerce-Fashion-Kit---Memphisorigins?node-id=117-1217&p=f&t=NB21tAkYxaOXq8x8-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=119%3A2090" target="_blank"><i class="fab fa-figma"></i> Prototype Figma</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x220/28a745/ffffff?text=Mobile+App+2"
+                        alt="Aplikasi Mobile 2">
+                    <div class="portfolio-info">
+                        <h3>UI UX E-Commerce Food - Memphisorigins</h3>
+                        <p>Desain UI/UX aplikasi mobile lengkap untuk e-commerce food, fokus pada pengalaman pengguna yang
+                        mulus dan antarmuka yang menarik.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Kode Sumber</a>
+                            <a href="#" target="_blank"><i class="fas fa-globe"></i> Demo Video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x220/ffc107/ffffff?text=UI/UX+Web+App+3"
+                        alt="UI/UX Aplikasi Web 3">
+                    <div class="portfolio-info">
+                        <h3>Desain Dashboard Analitik (Web)</h3>
+                        <p>Desain UI/UX untuk dashboard analitik web yang kompleks, menghadirkan data besar dalam format
+                            yang mudah dipahami.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Lihat Detail</a>
+                            <a href="#" target="_blank"><i class="fab fa-behance"></i> Behance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x220/17a2b8/ffffff?text=Website+Dev+4"
+                        alt="Website Pengembangan 4">
+                    <div class="portfolio-info">
+                        <h3>Website Profil Perusahaan (Frontend)</h3>
+                        <p>Pengembangan frontend untuk website profil perusahaan responsif dan modern menggunakan HTML,
+                            CSS, dan JavaScript.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Kode Sumber</a>
+                            <a href="#" target="_blank"><i class="fas fa-globe"></i> Lihat Langsung</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x220/6f42c1/ffffff?text=Coming+Soon"
+                        alt="Proyek Mendatang">
+                    <div class="portfolio-info">
+                        <h3>[Nama Proyek Anda]</h3>
+                        <p>Deskripsi singkat tentang proyek ini. Jelaskan peran Anda dan teknologi yang digunakan.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Pelajari Lebih
+                                Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Bintang Cahya Putra. Semua Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mengatur tahun saat ini di footer secara otomatis
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
